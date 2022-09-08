@@ -30,7 +30,7 @@ public class TestBase {
         Configuration.browser = System.getProperty("browser", "Chrome");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", "100");
-        Configuration.remote = "https://" + config.login() + ":" + config.password() + "@" + System.getProperty("remote", "selenoid.autotests.cloud/wd/hub");
+        //Configuration.remote = "https://" + config.login() + ":" + config.password() + "@" + System.getProperty("remote", "selenoid.autotests.cloud/wd/hub");
     }
     @BeforeEach
     public void beforeEach() {
