@@ -19,7 +19,6 @@ public class MainPage extends TestBase {
     cloud.autotests.config.PageObject PageObject = new PageObject();
 
 
-
     @Test
     @Description("Twitch.tv")
     @DisplayName("Twitch.tv test main page")
@@ -50,7 +49,6 @@ public class MainPage extends TestBase {
                     .assertHeader("Подбор рекламы")
                     .assertHeader("Политика конфиденциальности")
                     .assertHeader("Правила сообщества")
-                    .assertHeader("Справка")
                     .assertHeader("Центр безопасности")
                     .assertHeader("Безопасность")
                     .assertHeader("Условия");
@@ -64,7 +62,7 @@ public class MainPage extends TestBase {
         step("открыть https://https://www.twitch.tv/", () -> {
             PageObject.openPage();
         });
-        step("нажать на ярлык профиля и проверить смену цветовой палитры",()->{
+        step("нажать на ярлык профиля и проверить смену цветовой палитры", () -> {
             $(".Layout-sc-nxg1ff-0:nth-child(2) > .Layout-sc-nxg1ff-0:nth-child(1) > div:nth-child(1) > .ScCoreButton-sc-1qn4ixc-0:nth-child(1) path:nth-child(1)").click();
             $(".ScToggleButton-sc-796zbf-2").click();
             WebElement customer = $(By.className(".tw-root--theme-dark"));
@@ -72,7 +70,7 @@ public class MainPage extends TestBase {
             WebElement customer1 = $(By.className(".tw-root--theme-light"));
             $(".ScToggleButton-sc-796zbf-2").click();
             WebElement customer2 = $(By.className(".tw-root--theme-dark"));
-         });
+        });
     }
 
     @Test
@@ -82,24 +80,24 @@ public class MainPage extends TestBase {
         step("открыть https://https://www.twitch.tv/", () -> {
             PageObject.openPage();
         });
-        step("открыть подраздел 'Игры'",()-> {
+        step("открыть подраздел 'Игры'", () -> {
             $(".ScInteractableBase-sc-awmohi-0").click();
             $(".esports-directory-home-header").shouldBe(Condition.text("Игры"));
         });
-        step("открыть подраздел 'IRL'",()-> {
-            $(".ScInteractableBase-sc-awmohi-0",1).click();
+        step("открыть подраздел 'IRL'", () -> {
+            $(".ScInteractableBase-sc-awmohi-0", 1).click();
             $(".esports-directory-home-header").shouldBe(Condition.text("IRL"));
         });
-        step("открыть подраздел 'Музыка'",()-> {
-            $(".ScInteractableBase-sc-awmohi-0",2).click();
+        step("открыть подраздел 'Музыка'", () -> {
+            $(".ScInteractableBase-sc-awmohi-0", 2).click();
             $(".esports-directory-home-header").shouldBe(Condition.text("Музыка"));
         });
-        step("открыть подраздел 'Киберспорт'",()-> {
-            $(".ScInteractableBase-sc-awmohi-0",3).click();
+        step("открыть подраздел 'Киберспорт'", () -> {
+            $(".ScInteractableBase-sc-awmohi-0", 3).click();
             $(".esports-directory-home-header").shouldBe(Condition.text("Киберспорт"));
         });
-        step("открыть подраздел 'Творчество'",()-> {
-            $(".ScInteractableBase-sc-awmohi-0",4).click();
+        step("открыть подраздел 'Творчество'", () -> {
+            $(".ScInteractableBase-sc-awmohi-0", 4).click();
             $(".esports-directory-home-header").shouldBe(Condition.text("Творчество"));
         });
 

@@ -26,11 +26,11 @@ public class TestBase {
         CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
         DriverSettings.configure();
 
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://hh.ru");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.twitch.tv/?lang=ru-RU");
         Configuration.browser = System.getProperty("browser", "Chrome");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", "100");
-        //Configuration.remote = "https://" + config.login() + ":" + config.password() + "@" + System.getProperty("remote", "selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = "https://" + config.login() + ":" + config.password() + "@" + System.getProperty("remote", "selenoid.autotests.cloud/wd/hub");
     }
     @BeforeEach
     public void beforeEach() {

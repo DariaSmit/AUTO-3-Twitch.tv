@@ -10,7 +10,7 @@ public class PageObject {
 
 
     public PageObject openPage() {
-        Selenide.open("https://www.twitch.tv");
+        Selenide.open("https://www.twitch.tv/?lang=ru-RU");
         return this;
     }
 
