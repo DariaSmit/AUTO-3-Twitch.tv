@@ -5,12 +5,7 @@
 ## Содержание 
 * Инструменты 
 * Реализованные проверки 
-* Jenkins сборка
-* Allure репорт
-* Allure TestOPs
-* Запуск с терминала
-* Отчет в telegram
-* Видео прохождения тестов
+
 -------
 ## Инструменты 
 <img src="https://user-images.githubusercontent.com/110921807/187623033-dce99ef4-26a4-47cd-aa9d-ec01d9bc9d56.svg" width="5%"> <img src="https://user-images.githubusercontent.com/110921807/187623016-1959e45a-cd38-4084-a1f4-d4ea912c2c5a.svg" width=5%> 
