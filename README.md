@@ -1,4 +1,4 @@
-# **Проект по автоматизации тестирования сайта www.twitch.tv**
+# **Проект по автоматизации тестирования сайта www.twitch.tv UI local**
 
 <img src="https://user-images.githubusercontent.com/110921807/188940618-9e30b89b-a504-4870-9394-c0c6ebeea15d.jpg" width="70%">
 
